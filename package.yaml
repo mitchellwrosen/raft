@@ -1,0 +1,23 @@
+name: raft
+version: 0.1.0.0
+
+ghc-options: -Wall
+
+default-extensions:
+  - GADTs
+  - RankNTypes
+  - TypeOperators
+
+dependencies:
+  - base
+
+library:
+  source-dirs: src
+
+tests:
+  spec:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - raft
+      - hspec
