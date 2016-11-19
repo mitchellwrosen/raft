@@ -4,12 +4,20 @@ version: 0.1.0.0
 ghc-options: -Wall
 
 default-extensions:
+  - DataKinds
+  - FlexibleContexts
+  - FlexibleInstances
   - GADTs
+  - MultiParamTypeClasses
+  - PolyKinds
   - RankNTypes
   - TypeOperators
+  - UnicodeSyntax
 
 dependencies:
   - base
+  - microlens
+  - microlens-th
 
 library:
   source-dirs: src
